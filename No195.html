@@ -39,12 +39,12 @@
 	<div class="nojs" id="kl-nojs">⚠️ <b>このプレビューではボタンが反応しません（JavaScript無効）。</b><br><b>下のグレーの欄を直接タップ→全選択→コピー</b>でそのまま貼り付けできます（ボタンは無視してOK）。<br>動画の保存は No195_kiralab.mp4 を直接開いて 共有 →「ビデオを保存」。</div>
 
 	<div class="preview">
-		<video id="kl-video" src="No195_kiralab.mp4" controls playsinline preload="metadata"></video>
+		<video id="kl-video" src="videos/No195_kiralab.mp4" controls playsinline preload="metadata"></video>
 	</div>
 	<p class="fallback-note" id="kl-fallback-note">「保存」が使えない場合は、上の動画を長押し →「ビデオを保存」で写真に保存できます。</p>
 
 	<button type="button" class="btn btn-save" id="kl-save" disabled>① 動画を写真に保存（準備中…）</button>
-	<a class="dl" id="kl-dl" href="No195_kiralab.mp4" download="No195_kiralab.mp4">↓ うまくいかない時はこちらからダウンロード</a>
+	<a class="dl" id="kl-dl" href="videos/No195_kiralab.mp4" download="No195_kiralab.mp4">↓ うまくいかない時はこちらからダウンロード</a>
 
 	<div class="steps">
 		② 動画を写真に保存 → 各アプリで「アップロード」から選択（無音なのでアプリ内でトレンド音源を付ける）<br>
@@ -88,7 +88,7 @@ VOICEVOX:ずんだもん
 
 <script>
 ( function () {
-	var VIDEO_URL = 'No195_kiralab.mp4';
+	var VIDEO_URL = 'videos/No195_kiralab.mp4';
 	var FILE_NAME = 'No195_kiralab.mp4';
 	var saveBtn = document.getElementById( 'kl-save' );
 	var videoFile = null;
