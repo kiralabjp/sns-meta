@@ -51,6 +51,17 @@
 		③ 下の各媒体メタをコピーして貼り付け → 投稿（タグ5・外部リンク無し・カバー1枚目はHOOK先頭）
 	</div>
 
+	<div class="plat" style="border-color:#10b981">📌 固定コメント（2面共通）</div>
+	<button type="button" class="btn btn-copy" id="kl-copy-prompt">固定コメントをコピー</button>
+	<textarea id="kl-prompt" rows="10" readonly>【この動画で紹介した内容】
+やってほしいのはこの2つだけです。
+
+①インスタのアカウントを持っていること
+②1日15分だけ使えること
+
+特別なスキルや経験は必要ありません。
+知っているだけで終わらせず、まずは15分だけ試してみてください🙌
+くわしいやり方はキャプションをチェックしてね。</textarea>
 
 	<!-- YouTube -->
 	<div class="plat yt">▶ YouTube Shorts（検索最適化）</div>
@@ -60,7 +71,7 @@
 	<textarea id="kl-ytdesc" rows="18" readonly>顔出し不要、動画投稿もせずに、インスタで家計にゆとりを作る方法があります。
 必要な条件はたった2つ。①インスタのアカウントがあること ②1日15分だけ使えること。
 この2つに当てはまればOK。特別なスキルがある人だけの方法ではありません。
-詳しく知りたい人はこのままキャプションを見てください。
+詳しく知りたい人はこのままキャプションを見てください。くわしい条件は固定コメントにもまとめました。
 
 #インスタ運用 #スキマ時間 #おうち時間 #家計管理 #暮らしの工夫</textarea>
 
@@ -77,7 +88,7 @@
 この2つに当てはまればOK。特別なスキルがある人だけの方法ではありません。
 だからこそ、知っていても動かない人が多いんです。
 
-詳しく知りたい人はこのまま保存しておいてね。
+詳しく知りたい人はこのまま保存しておいてね。くわしい条件は固定コメントにもまとめてあります。
 
 #インスタ運用 #スキマ時間 #おうち時間 #家計管理 #暮らしの工夫</textarea>
 
@@ -142,6 +153,7 @@
 			flash( saveBtn, '✓ 共有シートで「ビデオを保存」を選択' );
 		} ).catch( function () {} );
 	} );
+	document.getElementById('kl-copy-prompt').addEventListener('click',function(e){e.preventDefault();copyText('kl-prompt',this);});
 	document.getElementById( 'kl-copy-yttitle' ).addEventListener( 'click', function ( e ) { e.preventDefault(); copyText( 'kl-yttitle', this ); } );
 	document.getElementById( 'kl-copy-ytdesc' ).addEventListener( 'click', function ( e ) { e.preventDefault(); copyText( 'kl-ytdesc', this ); } );
 	document.getElementById( 'kl-copy-igcap' ).addEventListener( 'click', function ( e ) { e.preventDefault(); copyText( 'kl-igcap', this ); } );
