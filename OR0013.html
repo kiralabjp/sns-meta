@@ -34,7 +34,7 @@
 </head>
 <body>
 	<h1>🎬 今日の動画（OR0013）3面投稿</h1>
-	<p class="sub">GPT-6 Astra 使用制限</p>
+	<p class="sub">GPT-6 Astra 使用制限／YouTube本編 30.73秒</p>
 
 	<div class="nojs" id="kl-nojs">⚠️ <b>このプレビューではボタンが反応しません（JavaScript無効）。</b><br><b>下のグレーの欄を直接タップ→全選択→コピー</b>でそのまま貼り付けできます（ボタンは無視してOK）。<br>動画の保存は OR0013_kiralab.mp4 を直接開いて 共有 →「ビデオを保存」。</div>
 
@@ -53,7 +53,7 @@
 
 	<div class="plat" style="border-color:#10b981">📌 固定コメント（YouTube）</div>
 	<button type="button" class="btn btn-copy" id="kl-copy-prompt">固定コメントをコピー</button>
-	<textarea id="kl-prompt" rows="10" readonly>動画の数字はOpenAIが公開している「5時間あたりの目安」です（Plus 5〜45回／Pro $100 25〜225回／Pro $200 100〜900回）。公式が「固定の上限ではない」と明記しているとおり、実際の回数は作業内容・入出力の長さ・推論設定・Fast modeで変わります。
+	<textarea id="kl-prompt" rows="10" readonly>動画の数字はOpenAIが公開している「5時間あたりの目安」です（Plus 5〜45回／Pro $100 25〜225回／Pro $200 100〜900回。いずれもGPT-5.6 Solの半分）。公式が「固定の上限ではない」と明記しているとおり、実際の回数は作業内容・入出力の長さ・推論設定・Fast modeで変わります。5時間の枠とは別に週ごとの上限もあります。
 出典：https://learn.chatgpt.com/docs/pricing
 あなたは何回で止まりましたか？</textarea>
 
@@ -64,11 +64,13 @@
 	<button type="button" class="btn btn-copy" id="kl-copy-ytdesc">YouTube説明をコピー</button>
 	<textarea id="kl-ytdesc" rows="18" readonly>GPT-6 Astraを使い始めた人から「20分で止まった」という報告が出ています。
 
-OpenAIが公開しているCodex/Workの目安では、Astraは5時間あたりPlusで5〜45回。ひとつ前のGPT-5.6 Solは10〜100回なので、ちょうど半分です。
+OpenAIが公開しているCodex/Workの目安では、Astraは5時間あたりPlusで5〜45回。ひとつ前のGPT-5.6 Solは10〜100回なので、ちょうど半分です。Proでも同じく半分になります（Pro $100は25〜225回、Pro $200は100〜900回）。
 
 理由は1回あたりの消費が重いこと。AstraのクレジットレートはSolの2.5倍で、Fast modeを使うとさらに2.5倍。合わせて6.25倍の速さで減ります。
 
 対策はひとつ、速度を標準に戻すこと。これだけで使える回数が2.5倍になります。
+
+なお5時間の枠とは別に、週ごとの上限もあります。
 
 数字はOpenAIが公開している目安で、作業内容・入出力の長さ・推論設定によって変わります。
 
@@ -80,14 +82,14 @@ OpenAIが公開しているCodex/Workの目安では、Astraは5時間あたりP
 	<div class="plat tt">♪ TikTok（@zaku_tiktok_ai）</div>
 	<button type="button" class="btn btn-copy" id="kl-copy-ttcap">TikTokキャプションをコピー</button>
 	<textarea id="kl-ttcap" rows="12" readonly>GPT-6 Astraは5時間で5回から。ひとつ前のSolのちょうど半分です。速度を標準に戻すと使える回数が2.5倍になります。
-数字はOpenAIが公開している目安で、作業内容によって変わります。
+数字はOpenAIが公開している目安で、作業内容によって変わります。週ごとの上限も別にあります。
 あなたは何回で止まりましたか？
 #GPT6Astra #Codex #ChatGPT #OpenAI #使用制限</textarea>
 
 	<!-- Instagram -->
 	<div class="plat ig">📷 Instagram Reels（@char_sns_ai）</div>
 	<button type="button" class="btn btn-copy" id="kl-copy-igcap">Instagramキャプションをコピー</button>
-	<textarea id="kl-igcap" rows="12" readonly>（Instagramは出さない。OR0009と同じ方針＝面ごとに別のものを出す）</textarea>
+	<textarea id="kl-igcap" rows="12" readonly>（Instagramは出さない）</textarea>
 
 <script>
 ( function () {
